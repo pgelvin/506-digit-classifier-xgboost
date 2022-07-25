@@ -19,20 +19,20 @@ filename = open('model_outputs/scaler.pkl', 'rb')
 scaler = pickle.load(filename)
 filename.close()
 
-filename = open('model_outputs/rf_model.pkl', 'rb')
+filename = open('model_outputs/tree_grid_model.pkl', 'rb')
 rf_model = pickle.load(filename)
 filename.close()
 
-filename = open('model_outputs/xgb_model.pkl', 'rb')
+filename = open('model_outputs/xgb_grid_model.pkl', 'rb')
 xgb_model = pickle.load(filename)
 filename.close()
 
 
 
 ########### define variables
-tabtitle='digits classifier'
+tabtitle="Pat's digits classifier"
 sourceurl = 'https://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html'
-githublink = 'https://github.com/plotly-dash-apps/506-digit-classifier-xgboost'
+githublink = 'https://github.com/pgelvin/506-digit-classifier-xgboost.git'
 canvas_size = 200
 
 ########### BLANK FIGURE
