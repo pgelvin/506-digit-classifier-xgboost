@@ -122,7 +122,7 @@ app.layout = html.Div(children=[
         html.Div([
 
             html.Div([
-                html.H3('Draw & Submit'),
+                html.H3('Draw a number & press Submit'),
                 html.Br(),
                 html.Br(),
                 html.Br(),
@@ -148,12 +148,12 @@ app.layout = html.Div(children=[
 
             html.Div([
                 html.H3('Predicted Digit'),
-                html.Br(),
-                html.H4('Random Forest Model:'),
+                # html.Br(),
+                html.H4('Tree Grid Model:'),
                 html.H6(id='rf-prediction', children='...'),
                 html.H6(id='rf-probability', children='waiting for inputs'),
                 html.Br(),
-                html.H4('XGBoost Model:'),
+                html.H4('XGB Grid Model:'),
                 html.H6(id='xgb-prediction', children='...'),
                 html.H6(id='xgb-probability', children='waiting for inputs'),
             ], className='three columns'),
